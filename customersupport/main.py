@@ -13,6 +13,9 @@ warnings.filterwarnings('ignore')
 from crewai import Agent, Task, Crew
 
 import os
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
 
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
